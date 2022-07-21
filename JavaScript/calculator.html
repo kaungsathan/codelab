@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #result {
+        background-color: #00000099;
+        color: white;
+        width: 200px;
+        height: 20px;
+        padding: 5px 10px;
+      }
+
+      small {
+        color: red;
+      }
+
+      input {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="#">
+      <div id="result">0</div>
+      <br />
+      <label for="nOne">Number One:</label>
+      <input type="number" name="nOne" id="nOne" />
+      <small id="nOneError">Number one is required</small>
+      <br /><br />
+
+      <label for="nTwo">Number Two:</label>
+      <input type="number" name="nTwo" id="nTwo" />
+      <small id="nTwoError">Number two is required</small>
+      <br /><br />
+
+      <select name="operator" id="operator">
+        <option value="empty">Select opterator</option>
+        <option value="add">+</option>
+        <option value="subtract">-</option>
+        <option value="multiply">*</option>
+        <option value="divide">/</option>
+      </select>
+      <small id="operatorError">Operator is required</small>
+      <br /><br />
+
+      <button type="button" id="btn">Click</button>
+    </form>
+
+    <script src="./calculator.js"></script>
+  </body>
+</html>
